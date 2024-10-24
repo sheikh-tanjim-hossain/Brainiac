@@ -1,4 +1,4 @@
-import { faCheck, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
@@ -20,7 +20,6 @@ export default function Result() {
           </h1>
           <h1 className="text-xl md:text-4xl text-center mt-3">
             Attempt: {result.attempt}{" "}
-            <FontAwesomeIcon icon={faXmark} className="text-red-600" />
           </h1>
         </div>
         <div className="flex justify-center items-center mt-4">
