@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply border-primary rounded-lg md:hover:bg-primary md:hover:text-white md:hover:font-semibold hover:scale-105 cursor-pointer;
+}
