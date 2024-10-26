@@ -12,11 +12,12 @@ export default function SingleQuestion({
 }) {
   const [btnClicked, setBtnClicked] = useState(false);
   const [allOption, setAllOption] = useState([]);
-  const [btnText, setBtnText] = useState("next");
+  const [btnText, setBtnText] = useState("Skip");
   const navigate = useNavigate();
 
   function handleNext() {
     console.log("next question clicked");
+    setBtnText("Skip");
 
     setBtnClicked(false);
     if (currentPosition < data.length - 1) {
@@ -49,6 +50,7 @@ export default function SingleQuestion({
           // key={crypto.randomUUID()}
           btnClicked={btnClicked}
           setBtnClicked={setBtnClicked}
+          setBtnText={setBtnText}
           data={item}
           correctAnswer={data[currentPosition].correct_answer}
           question={data[currentPosition].question}

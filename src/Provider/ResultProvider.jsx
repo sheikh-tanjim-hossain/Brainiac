@@ -5,6 +5,7 @@ export default function ResultProvider({ children }) {
   const [result, setResult] = useState({
     correct: 0,
     attempt: 0,
+    time: 1,
   });
   return (
     <ResultContext.Provider value={{ result, setResult }}>

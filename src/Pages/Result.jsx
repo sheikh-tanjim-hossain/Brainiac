@@ -10,16 +10,19 @@ export default function Result() {
   return (
     <>
       <div className="mt-4">
-        <h1 className="text-center text-3xl md:text-5xl text-primary font-semibold uppercase underline ">
+        <h1 className="text-center text-3xl md:text-3xl text-primary font-semibold uppercase underline ">
           Final Result
         </h1>
         <div className="mt-4">
-          <h1 className="text-xl md:text-4xl text-center mt-4">
+          <h1 className="text-xl md:text-2xl text-center mt-3">
+            Time: {result.time} Min
+          </h1>
+          <h1 className="text-xl md:text-2xl text-center mt-4">
             Correct: {result.correct}{" "}
             <FontAwesomeIcon icon={faCheck} className="text-green-600" />
           </h1>
-          <h1 className="text-xl md:text-4xl text-center mt-3">
-            Attempt: {result.attempt}{" "}
+          <h1 className="text-xl md:text-2xl text-center mt-3">
+            Answer Attempt: {result.attempt}
           </h1>
         </div>
         <div className="flex justify-center items-center mt-4">

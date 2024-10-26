@@ -9,12 +9,14 @@ export default function SingleBtn({
   data,
   correctAnswer,
   question,
+  setBtnText,
 }) {
   const [bgColor, setBgColor] = useState("");
   const { result, setResult } = useContext(ResultContext);
 
   function handleClick(e) {
     setBtnClicked(true);
+    setBtnText("Next");
 
     if (e.target.value == correctAnswer) {
       setResult({

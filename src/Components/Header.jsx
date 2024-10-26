@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <header>
       {/* navbar */}
-      <nav className="text-3xl flex flex-row justify-center items-center h-16 p-auto text-white bg-primary/[.90] shadow-sm w-full">
+      <nav className="text-4xl flex flex-row justify-center items-center h-16 p-auto text-white bg-primary/[.90] shadow-sm w-full">
         <Link to="/" className="cursor-pointer">
           {/* <i className="fa-solid fa-brain mr-4"></i> */}
 
