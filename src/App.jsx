@@ -9,13 +9,6 @@ import Select from "./Pages/Select";
 import Test from "./Pages/Test";
 
 export default function App() {
-  // const [data, setData] = useState({
-  //   catagory: "",
-  //   difficulty: "easy",
-  //   ammount: 50,
-  //   questions: [],
-  // });
-
   const [data, setData] = useState([]);
   return (
     <>
