@@ -11,10 +11,10 @@ import Test from "./Pages/Test";
 export default function App() {
   const [data, setData] = useState([]);
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       <Header />
 
-      <main className="container mx-auto w-10/12 max-w-[1200px] -mb-16">
+      <main className="container mx-auto w-10/12 max-w-[1200px] mb-8">
         <Routes>
           <Route element={<Home />} path="/" />
           <Route element={<Select setData={setData} />} path="/select" />
@@ -26,6 +26,6 @@ export default function App() {
 
       {/* Footer */}
       <Footer />
-    </>
+    </div>
   );
 }
