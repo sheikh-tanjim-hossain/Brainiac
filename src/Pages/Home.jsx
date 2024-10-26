@@ -4,17 +4,17 @@ import HeroImage from "./../assets/Hero Image.svg";
 export default function Home() {
   return (
     <section id="hero" className="">
-      <FontAwesomeIcon icon="fa-solid fa-brain" />
-      <div className="h-svh md:h-auto flex flex-col md:flex-row justify-center md:justify-evenly items-center">
-        <div className="h-3/5 mt-2 md:mt-16 md:h-full">
+      <FontAwesomeIcon icon="fa-solid fa-brain " />
+      <div className="flex flex-col md:flex-row justify-center md:justify-evenly items-center">
+        <div className="mt-2 md:mt-16 md:h-full">
           <img
             src={HeroImage}
-            className="w-full h-full md:h-11/12"
+            className="w-full max-h-[500px] md:max-h-full"
             alt="Hero Image"
           />
         </div>
 
-        <div className="h-2/5 md:h-full flex flex-col items-center md:justify-center mt-8 md:mt-20">
+        <div className="flex flex-col items-center md:justify-center mt-8 md:mt-20">
           <h1 className="text-3xl md:text-5xl text-center font-semibold">
             Ready to test yourself?
           </h1>
