@@ -14,7 +14,7 @@ export default function App() {
     <>
       <Header />
 
-      <main className="container mx-auto w-10/12 max-w-[1200px]  -mb-16">
+      <main className="container mx-auto w-10/12 max-w-[1200px] -mb-16">
         <Routes>
           <Route element={<Home />} path="/" />
           <Route element={<Select setData={setData} />} path="/select" />
