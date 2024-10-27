@@ -15,6 +15,9 @@ export default function Select({ setData }) {
     setIsLoading(true);
     e.preventDefault();
 
+    console.log("Clicked");
+    console.log(result.correct);
+
     const selectedCatagory = e.target[0].value;
     const selectedDifficulty = e.target[1].value;
     const setTime = e.target[2].value;
@@ -28,13 +31,14 @@ export default function Select({ setData }) {
     if (apiData.response_code == 0) {
       setData([...apiData.results]);
       setIsLoading(false);
-      setResult({ ...result, time: setTime });
+      setResult({ ...result, correct: 0, attempt: 0, time: setTime });
       navigate("/test");
     }
   }
 
   useEffect(() => {
     setIsLoading(true);
+
     async function fetchData() {
       const resposne = await fetch(`https://opentdb.com/api_category.php`);
 

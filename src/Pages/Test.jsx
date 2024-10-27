@@ -10,7 +10,7 @@ export default function Test({ data }) {
 
   useEffect(() => {
     if (data.length == 0 || !data) {
-      // navigate("/select");
+      navigate("/select");
     }
   }, [currentPosition, data, navigate]);
 
