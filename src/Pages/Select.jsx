@@ -15,9 +15,6 @@ export default function Select({ setData }) {
     setIsLoading(true);
     e.preventDefault();
 
-    console.log("Clicked");
-    console.log(result.correct);
-
     const selectedCatagory = e.target[0].value;
     const selectedDifficulty = e.target[1].value;
     const setTime = e.target[2].value;
@@ -92,7 +89,7 @@ export default function Select({ setData }) {
                 htmlFor="category"
                 className="w-full md:w-auto md:mr-3 capitalize text-primary font-semibold p-2"
               >
-                Select Defficulty:
+                Select Difficulty:
               </label>
               <select className="w-full md:w-1/4 bg-white p-2">
                 <option value="easy" className="w-full h-full">

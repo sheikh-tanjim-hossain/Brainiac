@@ -26,7 +26,7 @@ export default function Home() {
               to="/select"
               className="bg-primary border rounded-md text-white px-4 py-2 md:text-base cursor-pointer"
             >
-              Select Preference
+              Take a test
             </Link>
           </button>
         </div>
